@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
+}
+h2 {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold;
+}
+h3 {
+  @apply text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold;
+}
+h4 {
+  @apply text-sm sm:text-base md:text-xl lg:text-3xl font-medium;
+}
+h5 {
+  @apply text-sm sm:text-base md:text-xl lg:text-2xl font-medium;
+}
+
+.arabic-heading {
+  font-family: "Scheherazade New", serif; /* Example Arabic-style font */
+  letter-spacing: 0.15em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.arabic-description {
+  font-family: "Amiri", serif; /* Elegant Arabic description font */
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
 }
