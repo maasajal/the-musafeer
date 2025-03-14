@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "The Musafeer",
-  description: "Live Like a Musafeer, Travel with Faith",
+  description:
+    "Live Like a Musafeer, Travel with Faith. True path of life is Islam. Best & Cheapest Umrah package for all over muslims. Umrah from Finland. Join us for a Spiritual Journey: Umrah in Soudi Arabia. Embark on a life-changing journey to the holy cities of Makkah and Madinah. Join our exclusive 7-days Umrah package and experience the peace, blessings, and spirituality of Umrah with Comfort and ease.",
 };
 
 export default function RootLayout({
@@ -27,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
