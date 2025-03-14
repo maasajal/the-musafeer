@@ -1,9 +1,11 @@
+import KaabaVideo from "@/pages/home/KaabaVideo";
+import Banner from "@/pages/home/Banner";
+
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <div className="text-center my-10">
-        <h1 className="uppercase">Live Like a Musafeer, Travel with Faith</h1>
-      </div>
-    </div>
+    <main className="font-[family-name:var(--font-geist-sans)]">
+      <KaabaVideo />
+      {/* <Banner /> */}
+    </main>
   );
 }
