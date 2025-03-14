@@ -35,7 +35,7 @@ const SpiritualJourney = () => {
           transition={{ delay: 1.5, duration: 1 }}
         >
           <a
-            href="#"
+            href="/spiritual-journey"
             className="bg-blue-600 hover:bg-blue-800 text-white text-lg font-bold py-3 px-6 rounded-full shadow-md transition"
           >
             Learn More

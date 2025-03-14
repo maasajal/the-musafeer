@@ -5,7 +5,7 @@ import Link from "next/link";
 const CallToAction = () => {
   return (
     <motion.div
-      className="bg-rose-500 text-white py-10 px-4 text-center"
+      className="bg-rose-500 text-white py-10 px-4 text-center rounded-xl"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
