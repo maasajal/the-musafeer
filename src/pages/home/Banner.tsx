@@ -18,9 +18,9 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative mx-5 sm:mx-10 md:mx-20 py-5 md:py-10 md:mb-40">
+    <div className="static md:relative mx-5 sm:mx-10 md:mx-20 py-5 md:py-10 md:mb-80 z-20">
       <motion.div
-        className="absolute inset-x-0 -bottom-64 mx-auto p-6 bg-white max-w-xl sm:max-w-3xl md:max-w-5xl rounded-xl shadow-lg text-center"
+        className="md:absolute inset-x-0 -bottom-64 mx-auto p-6 bg-white max-w-xl sm:max-w-3xl md:max-w-5xl rounded-xl shadow-lg text-center"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
