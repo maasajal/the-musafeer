@@ -1,4 +1,5 @@
 "use client";
+import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -24,7 +25,24 @@ const Footer = () => {
             transition={{ duration: 1 }}
           >
             <h3 className="text-xl font-bold text-white">About Us</h3>
-            <p>
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                flexGrow: 1,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              The Musafeer
+            </Typography>
+            <p className="pt-5">
               Join us for a spiritual journey to Makkah and Madinah. We provide
               comprehensive Umrah packages with unparalleled comfort and
               service.
