@@ -1,14 +1,14 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 const Banner = () => {
-  // Framer Motion variants for animations
+  // Animation Variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Stagger animation for children
-      },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
@@ -18,56 +18,50 @@ const Banner = () => {
   };
 
   return (
-    <div className="static md:relative mx-5 sm:mx-10 md:mx-20 py-5 md:py-10 md:mb-80">
+    <div className="static md:relative mx-5 sm:mx-10 md:mx-20 py-5 md:py-10 md:mb-80 z-20">
       <motion.div
-        className="md:absolute mx-auto -bottom-64 left-0 right-0 p-6 bg-white max-w-xl sm:max-w-3xl md:max-w-5xl rounded-xl shadow-lg text-center"
+        className="md:absolute inset-x-0 -bottom-64 mx-auto p-6 bg-white max-w-xl sm:max-w-3xl md:max-w-5xl rounded-xl shadow-lg text-center"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
         <motion.div className="space-y-4">
-          {/* Title with motion */}
           <motion.h2
-            className="tracking-wider"
+            className="text-xl md:text-2xl font-semibold tracking-wider"
             variants={itemVariants}
           >
             EID & Umrah in Makkah
           </motion.h2>
 
-          {/* Price with motion */}
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl font-medium"
+            className="text-lg sm:text-xl md:text-2xl font-medium text-gray-700"
             variants={itemVariants}
           >
             €850 - €1200 (All Inclusive)
           </motion.p>
 
-          {/* Dates with motion */}
           <motion.p
-            className="text-sm sm:text-base md:text-lg font-light uppercase"
+            className="text-sm sm:text-base md:text-lg font-light uppercase text-gray-500"
             variants={itemVariants}
           >
-            January, February, March 2025
+            March, April, May 2025
           </motion.p>
 
-          {/* Description with motion */}
           <motion.p
-            className="text-center max-w-xl mx-auto leading-8"
+            className="text-center max-w-xl mx-auto leading-8 text-gray-600"
             variants={itemVariants}
           >
-            Umrah from Finland. Join us for a Spiritual Journey: Umrah in Soudi
-            Arabia. Embark on a life-changing journey to the holy cities of
-            Makkah and Madinah. Join our exclusive 7-days Umrah package and
-            experience the peace, blessings, and spirituality of Umrah with
-            Comfort and ease.
+            Join us for a Spiritual Journey: Umrah in Saudi Arabia. Experience a
+            life-changing journey to the holy cities of Makkah and Madinah. Our
+            exclusive 7-day Umrah package offers peace, blessings, and
+            spirituality with comfort and ease.
           </motion.p>
 
-          {/* Tour Route with motion */}
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl font-light uppercase"
+            className="text-lg sm:text-xl md:text-2xl font-light uppercase text-gray-700"
             variants={itemVariants}
           >
-            Tour Route: Jeddah, Mekka, Madinah
+            Tour Route: Jeddah, Makkah, Madinah
           </motion.p>
         </motion.div>
       </motion.div>
